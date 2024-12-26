@@ -28,7 +28,7 @@ def delete_thread(thread_id):
 
     return jsonify(request_response)
 
-@app.route("/openai-bothealth/chat", methods=["POST"])
+@app.route("/opeani-bothealth/chat", methods=["POST"])
 def chat():
     try:
         user_prompt = request.json["message"]

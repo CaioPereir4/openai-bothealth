@@ -1,6 +1,6 @@
-<h1 align="center">Backend Node do Botinho.</h1>
+<h1 align="center">Backend Python do Botinho.</h1>
 
-<p align="center">Servidor backend desenvolvido em Node.js e Javascript. Responsável por gerenciar regras de negócio através de conexão com banco de dados.</p>
+<p align="center">Servidor Backend desenvolvido em Python e Flask. Realiza integração com a Api da OpenAI, gerenciando o modelo do LLM. Mapea e trata as resposta da OpenAI.</p>
 
 Tabela de conteúdos
 =================
@@ -16,39 +16,44 @@ Tabela de conteúdos
 
 ### Features
 
-- [x] Cadastro de usuário.
-- [x] Login do usuário.
-- [x] Enviar mensagem para o bot.
-- [x] Salvar histórico da conversa.
-- [x] Reset de histórico.
+- [x] Conexão com a Api da OpenAI.
+- [x] Gerenciar gpt-4.
+- [x] Enviar mensagem para o assitente.
+- [x] Mapear e tratar respostas.
 
 <a id="instalacao"></a>
 ### Instalação
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [PostgreSql](https://www.postgresql.org/download/). 
+[Git](https://git-scm.com), [Python](https://www.python.org/downloads/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 <a id="como-usar"></a>
-### 🎲 Rodando o backend
+### 🎲 Rodando o backend Python
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/CaioPereir4/backend-bothealth.git>
+$ git clone <https://github.com/CaioPereir4/openai-bothealth.git>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd backend-bothealth/
+$ cd openai-bothealth/
 
 # Instale as dependências
-$ npm install
+$ pip install
+
+#Ajuste as variáveis de ambiente
+
+- Crie o arquivo ".env" na raíz da aplicação.
+- Adicione a variável "OPENAI_API_KEY", passe como valor sua Api-Key da OpenAI.
+- Adicione a variável "ASSISTENT_ID", passe como valor o Id do Assistente criado no PlayGround da OpenAI.
+
 
 # Execute a aplicação
-$ npm run start
+$ python app.py
 
-# O servidor inciará na porta:8080 - acesse <http://localhost:8080/backend-bothealth>
+# O servidor inciará na porta:5000 - acesse <http://localhost:5000/opeani-bothealth>
 ```
 <a id="tecnologias"></a>
 ### 🛠 Tecnologias
 As seguintes ferramentas foram usadas na construção do projeto:
 
-- [Node.js](https://nodejs.org/en/download)
-- [PostgreSql](https://www.postgresql.org/download/)
+- [Python](https://www.python.org/downloads/)

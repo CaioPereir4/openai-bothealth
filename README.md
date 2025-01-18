@@ -44,7 +44,7 @@ $ npm install
 # Execute a aplicação
 $ npm run start
 
-# O servidor inciará na porta:8080 - acesse <http://localhost:8080>
+# O servidor inciará na porta:8080 - acesse <http://localhost:8080/backend-bothealth>
 ```
 <a id="tecnologias"></a>
 ### 🛠 Tecnologias

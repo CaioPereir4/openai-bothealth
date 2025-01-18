@@ -57,3 +57,4 @@ $ python app.py
 As seguintes ferramentas foram usadas na construção do projeto:
 
 - [Python](https://www.python.org/downloads/)
+- [Flask](https://flask.palletsprojects.com/en/stable/)
